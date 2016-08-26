@@ -24,14 +24,14 @@ bot.onText(/^\/agua()$/,function (msg,match) {
 
     bot.onText(/^\/pago()$/,function (msg,match) {
     var obtener=msg.chat.id;
-    var photo='/assets/images/pago.png';
+    var photo='assets/images/pago.png';
     bot.sendPhoto(obtener,photo);
        console.log(`Enviando a ${photo}`);
     });
 
     bot.onText(/^\/requisito()$/,function (msg,match) {
     var obtener=msg.chat.id;
-    var document='/assets/documentos/requisito.pdf';
+    var document='assets/documentos/requisito.pdf';
      bot.sendDocument(obtener,document);
         console.log(`Enviando a ${document}`);
     });
@@ -39,14 +39,14 @@ bot.onText(/^\/agua()$/,function (msg,match) {
     
 bot.onText(/^\/pagos()$/,function (msg,match) {
     var obtener=msg.chat.id;
-    var photo='/assets/images/pago.png';
+    var photo='assets/images/pago.png';
      bot.sendPhoto(obtener,photo);
         console.log(`Enviando a ${photo}`);
     });
 
     bot.onText(/^\/requisitos()$/,function (msg,match) {
     var obtener=msg.chat.id;
-    var document='/assets/documentos/requisitos.pdf';
+    var document='assets/documentos/requisitos.pdf';
      bot.sendDocument(obtener,document);
         console.log(`Enviando a ${document}`);
     });
@@ -65,14 +65,14 @@ bot.onText(/^\/ubicacion()$/,function (msg,match) {
 
 bot.onText(/^\/medidor()$/,function (msg,match) {
     var obtener=msg.chat.id;
-    var video='/assets/videos/medidor_luz.mp4';
+    var video='assets/videos/medidor_luz.mp4';
      bot.sendVideo(obtener,video);
         console.log(`Enviando ${video}`);
     });
 
     bot.onText(/^\/recibo()$/,function (msg,match) {
     var obtener=msg.chat.id;
-    var video='/assets/videos/recibo_luz.mp4';
+    var video='assets/videos/recibo_luz.mp4';
      bot.sendVideo(obtener,video);
         console.log(`Enviando ${video}`);
     });
